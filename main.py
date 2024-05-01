@@ -2,8 +2,8 @@ from utils import read_video, save_video
 from face_tracker import FaceTracker
 
 def main():
-    # video_path = "intput_videos/input.avi"
-    frames = read_video("input_videos/input.avi")
+    video_path = "input_videos/input.avi"
+    frames = read_video(video_path)
     tracker = FaceTracker("models/face_detection_model.pth")
     bboxes = tracker.detect_face(frames)
     new_frames = tracker.draw_bbox(frames, bboxes)
