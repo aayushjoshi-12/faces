@@ -1,0 +1,7 @@
+roboflow
+kaggle
+ultralytics
+torch
+torchvision
+opencv-python
+matplotlib

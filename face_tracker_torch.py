@@ -1,3 +1,5 @@
+# it's been deprecated use face_tracker_yolo.py instead
+
 import torch
 from torchvision import models, transforms
 import cv2 as cv
