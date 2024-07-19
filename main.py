@@ -14,10 +14,8 @@ def detect_in_video(video_path, output_path):
     save_video(new_frames, output_path)
 
 def detect_using_webcam():
-    # this function doesnt works on my system because i didn't built opencv so it doesn't have support for GUI
-    # in future i might come back and work on real time detection as well
     webcam = cv.VideoCapture(0)
-    while webcam.isOpened():
+    while True:
         ret, frame = webcam.read()
         if not ret:
             break
@@ -29,4 +27,4 @@ def detect_using_webcam():
             break
 
 if __name__ == "__main__":
-    detect_in_video('input_videos/input1.avi', 'output_videos/output.avi')
+    detect_using_webcam()
